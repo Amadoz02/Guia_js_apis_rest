@@ -1,204 +1,72 @@
 {
-  "posts": [
+  "clientes": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "nombre": "Juan Pérez",
+      "email": "juan.perez@example.com",
+      "telefono": "555-1234",
+      "direccion": "Calle Falsa 123"
     },
     {
-      "title": "2894667",
-      "author": "helder",
-      "id": 2
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 3
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 4
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 5
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 6
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 7
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 8
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 9
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 10
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 11
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 12
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 13
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 14
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 15
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 16
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 17
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 18
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 19
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 20
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 21
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 22
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 23
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 24
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 25
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 26
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 27
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 28
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 29
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 30
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 31
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 32
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 33
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 34
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 35
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 36
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 37
-    },
-    {
-      "title": "2894667",
-      "author": "helder",
-      "id": 38
+      "id": 2,
+      "nombre": "Ana Gómez",
+      "email": "ana.gomez@example.com",
+      "telefono": "555-5678",
+      "direccion": "Avenida Siempre Viva 456"
     }
   ],
-  "comments": [
+  "reservas": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "clienteId": 1,
+      "fechaReserva": "2025-04-01",
+      "fechaIngreso": "2025-04-10",
+      "fechaSalida": "2025-04-15",
+      "habitacionId": 101,
+      "tipoReserva": "individual",
+      "estado": "confirmada"
+    },
+    {
+      "id": 2,
+      "clienteId": 2,
+      "fechaReserva": "2025-04-05",
+      "fechaIngreso": "2025-04-20",
+      "fechaSalida": "2025-04-25",
+      "habitacionId": 102,
+      "tipoReserva": "familiar",
+      "estado": "pendiente"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "habitaciones": [
+    {
+      "id": 101,
+      "numero": "101",
+      "tipo": "sencilla",
+      "capacidad": 1,
+      "estado": "disponible"
+    },
+    {
+      "id": 102,
+      "numero": "102",
+      "tipo": "doble",
+      "capacidad": 2,
+      "estado": "ocupada"
+    }
+  ],
+  "serviciosAdicionales": [
+    {
+      "id": 1,
+      "reservaId": 1,
+      "servicio": "desayuno",
+      "descripcion": "Desayuno buffet incluido",
+      "precio": 15
+    },
+    {
+      "id": 2,
+      "reservaId": 2,
+      "servicio": "transporte",
+      "descripcion": "Servicio de traslado al aeropuerto",
+      "precio": 30
+    }
+  ]
 }
