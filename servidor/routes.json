@@ -1,8 +1,9 @@
 {
-    "/api/client": "/clientes",
-    "/api/reserv": "/reservas",
-    "/api/habitation": "/habitaciones",
-    "/api/services": "/serviciosAdicionales",
-    "/api/client/:id/reserv": "/reservas?clienteId=:id"
+    "/client": "/clientes",
+    "/client/:id":"/clientes/:id",
+    "/reserv": "/reservas",
+    "/habitation": "/habitaciones",
+    "/services": "/serviciosAdicionales",
+    "/client/:id/reserv": "/reservas?clienteId=:id"
   }
   

@@ -2,7 +2,7 @@
   "clientes": [
     {
       "id": 1,
-      "nombre": "Juan Pérez",
+      "nombre": "Breyner",
       "email": "juan.perez@example.com",
       "telefono": "555-1234",
       "direccion": "Calle Falsa 123"
@@ -19,21 +19,17 @@
     {
       "id": 1,
       "clienteId": 1,
-      "fechaReserva": "2025-04-01",
       "fechaIngreso": "2025-04-10",
       "fechaSalida": "2025-04-15",
       "habitacionId": 101,
-      "tipoReserva": "individual",
       "estado": "confirmada"
     },
     {
       "id": 2,
       "clienteId": 2,
-      "fechaReserva": "2025-04-05",
       "fechaIngreso": "2025-04-20",
       "fechaSalida": "2025-04-25",
       "habitacionId": 102,
-      "tipoReserva": "familiar",
       "estado": "pendiente"
     }
   ],
@@ -41,14 +37,12 @@
     {
       "id": 101,
       "numero": "101",
-      "tipo": "sencilla",
       "capacidad": 1,
       "estado": "disponible"
     },
     {
       "id": 102,
       "numero": "102",
-      "tipo": "doble",
       "capacidad": 2,
       "estado": "ocupada"
     }
@@ -58,14 +52,13 @@
       "id": 1,
       "reservaId": 1,
       "servicio": "desayuno",
-      "descripcion": "Desayuno buffet incluido",
+
       "precio": 15
     },
     {
       "id": 2,
       "reservaId": 2,
       "servicio": "transporte",
-      "descripcion": "Servicio de traslado al aeropuerto",
       "precio": 30
     }
   ]
