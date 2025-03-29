@@ -2,8 +2,13 @@
     "/client": "/clientes",
     "/client/:id":"/clientes/:id",
     "/reserv": "/reservas",
+    "/reserv/:id": "/reservas/:id",
     "/habitation": "/habitaciones",
+    "/habitation/:id": "/habitaciones/:id",
+
     "/services": "/serviciosAdicionales",
+    "/services/:id": "/serviciosAdicionales/:id",
+
     "/client/:id/reserv": "/reservas?clienteId=:id"
   }
   

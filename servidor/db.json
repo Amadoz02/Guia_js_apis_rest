@@ -8,11 +8,14 @@
       "direccion": "Calle Falsa 123"
     },
     {
-      "id": 2,
-      "nombre": "Ana Gómez",
-      "email": "ana.gomez@example.com",
-      "telefono": "555-5678",
-      "direccion": "Avenida Siempre Viva 456"
+      "nombre": "juan",
+      "email": "hfelipe@gmail.com",
+      "telefono": "61264563",
+      "direccion": "la cumbre",
+      "id": 3
+    },
+    {
+      "id": 4
     }
   ],
   "reservas": [
@@ -25,41 +28,41 @@
       "estado": "confirmada"
     },
     {
-      "id": 2,
-      "clienteId": 2,
-      "fechaIngreso": "2025-04-20",
-      "fechaSalida": "2025-04-25",
-      "habitacionId": 102,
-      "estado": "pendiente"
+      "estado": "pendiente",
+      "id": 2
+    },
+    {
+      "estado": "pendiente",
+      "id": 3
     }
   ],
   "habitaciones": [
     {
-      "id": 101,
-      "numero": "101",
-      "capacidad": 1,
-      "estado": "disponible"
+      "estado": "ocupada",
+      "id": 101
     },
     {
       "id": 102,
       "numero": "102",
       "capacidad": 2,
       "estado": "ocupada"
+    },
+    {
+      "id": 103
+    },
+    {
+      "numero": "106",
+      "capacidad": "4",
+      "estado": "disponible",
+      "id": 104
     }
   ],
   "serviciosAdicionales": [
     {
-      "id": 1,
-      "reservaId": 1,
-      "servicio": "desayuno",
-
-      "precio": 15
+      "id": 1
     },
     {
-      "id": 2,
-      "reservaId": 2,
-      "servicio": "transporte",
-      "precio": 30
+      "id": 3
     }
   ]
 }
